@@ -137,7 +137,7 @@ body {
   margin-top: 6rem;
 }
 .btn-menu:hover {
-  background-color: #002ead;
+  background-color: skyblue;
   transition: 0.7s;
 }
 
@@ -163,9 +163,9 @@ body {
 }
 
 .sect-1 > .btn-menu {
-  background-color: navy;
+  background-color: yellowgreen;
   border: none;
-  color: white;
+  color: whitesmoke;
   padding: 1.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -224,7 +224,7 @@ body {
   top: 10rem;
 }
 .composition__photo:hover {
-  outline: 1rem solid #0a0a23;
+  outline: 1rem solid skyblue;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
   z-index: 20;
@@ -239,7 +239,7 @@ body {
 .about-us {
   text-align: center;
   font-size: 3rem;
-  background-color: rgba(172, 167, 167, 0.274);
+  background-color: skyblue;
 }
 .about {
   display: flex;
@@ -283,7 +283,7 @@ body {
   width: 70%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgb(222, 219, 8);
+  background-color: grey;
   border-radius: 0.3rem;
   padding: 6rem;
   font-size: 1.6rem;
