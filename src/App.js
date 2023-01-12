@@ -8,6 +8,7 @@ import TodaysMeal from "./Admin/TodaysMeal";
 import Order from "./Admin/Order";
 import Amount from "./Admin/Amount";
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <div>
       <Routes>
