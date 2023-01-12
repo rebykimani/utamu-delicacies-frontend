@@ -1,3 +1,4 @@
+// import { useState } from React;
 import "./App.css";
 import Landing from "./components/LandingPage/Landing";
 import { Route, Routes } from "react-router-dom";
@@ -7,8 +8,9 @@ import Dashboard from "./Admin/Dashboard";
 import TodaysMeal from "./Admin/TodaysMeal";
 import Order from "./Admin/Order";
 import Amount from "./Admin/Amount";
+import React from "react";
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = React.useState(null);
   return (
     <div>
       <Routes>
