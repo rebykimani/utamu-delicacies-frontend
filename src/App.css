@@ -18,6 +18,7 @@ body {
   line-height: 1.7;
   padding: 2rem;
   box-sizing: border-box;
+  background-color:#6699CC;
 
   /* font-weight: 400;
   font-size: 1.6rem;
@@ -99,7 +100,7 @@ body {
 } */
 .home-1 > .btn-view-1{
   margin-left: 1rem;
-  background-color: rgb(135, 142, 235);
+  background-color: aqua;
   border: none;
   color: white;
   padding: 1.5rem;
@@ -163,7 +164,7 @@ body {
 }
 
 .sect-1 > .btn-menu {
-  background-color: yellowgreen;
+  background-color: aqua;
   border: none;
   color: whitesmoke;
   padding: 1.5rem 1.5rem;
@@ -224,7 +225,7 @@ body {
   top: 10rem;
 }
 .composition__photo:hover {
-  outline: 1rem solid skyblue;
+  outline: 1rem solid aqua;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
   z-index: 20;
@@ -239,7 +240,7 @@ body {
 .about-us {
   text-align: center;
   font-size: 3rem;
-  background-color: skyblue;
+  background-color: aqua;
 }
 .about {
   display: flex;
@@ -380,7 +381,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: skyblue;
+  background-color: aqua;
 }
 
 /*end of reviews part*/
@@ -594,9 +595,9 @@ li:active {
   text-align: center;
 }
 .reg > .btn-menu{
-  background-color: #0a0a23;
+  background-color: grey;
   border: none;
-  color: white;
+  color:skyblue;
   padding: 1.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -668,7 +669,7 @@ li:active {
   margin-left: 5rem;
   margin-right: 5rem;
   border-radius: 1rem;
-  background-color: #0a0a23;
+  background-color: grey;
   
  
 }
@@ -679,14 +680,14 @@ li:active {
   padding: 1rem;
   font-size: 2.5rem;
   font-weight: 700;
-  background-color: #0a0a23;
+  background-color: grey;
   border-radius: 2rem;
-  color: rgb(247, 13, 13);
+  color: navy;
   margin-left: 30px;
 }
 .btn-view{
-  background-color: #0a0a23;
-  color:skyblue;
+  background-color: grey;
+  color:black;
   border: none;
   border-radius: 1rem;
   padding: 1.2rem;

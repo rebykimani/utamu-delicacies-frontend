@@ -52,8 +52,8 @@ function MainMenu() {
 
       <div className="info">
         <div className="sect-1">
-          <h1>Delicious Food For Your cravings</h1>
-          <p>We Cook Fresh And Healthy Foods With Different Recipes</p>
+          <h1>Delicious Food For Your cravings </h1>
+          <p>Welcome and experience the most deliicious fresh foods </p>
           <NavLink to={"/meals"} exact="true" className="btn-menu">
             View-Menu &rarr;
           </NavLink>
