@@ -18,7 +18,7 @@ body {
   line-height: 1.7;
   padding: 2rem;
   box-sizing: border-box;
-  background-color:#6699CC;
+  background-color:rgb(7 89 133);;
 
   /* font-weight: 400;
   font-size: 1.6rem;
@@ -240,7 +240,7 @@ body {
 .about-us {
   text-align: center;
   font-size: 3rem;
-  background-color: aqua;
+  background-color:rgb(7 89 133);;
 }
 .about {
   display: flex;
@@ -381,7 +381,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: aqua;
+  background-color: rgb(7 89 133);;
 }
 
 /*end of reviews part*/
@@ -448,8 +448,8 @@ li:link,
 
 li:hover {
   font-size: 2.5rem;
-  background-color: #0a0a23;
-  color: #002ead;
+  background-color: rgb(7 89 133);;
+  color: whitesmoke;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
