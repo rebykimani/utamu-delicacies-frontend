@@ -38,7 +38,7 @@ function AdminHearder() {
             Amount
           </NavLink>
           <div className="">
-          <a href="register">
+          <a href="login">
             <div className="flex space-x-4 mt-6 hover:bg-white">
               Logout <FiLogOut size="20px" />
             </div>

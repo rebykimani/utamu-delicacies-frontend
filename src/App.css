@@ -32,11 +32,11 @@ body {
 .navs{
   margin: 2rem;
   padding-left: 5rem;
- 
+
 }
 .navs > .btn-view-2{
  margin: .5rem;
- 
+
 }
 .nav {
   display: flex;
@@ -95,8 +95,8 @@ body {
 
 
 /* .home-1 {
-  
- 
+
+
 } */
 .home-1 > .btn-view-1{
   margin-left: 1rem;
@@ -112,14 +112,14 @@ body {
   font-weight: 700;
   border-radius: 1rem;
   margin-top: 1rem;
- 
+
 }
 
 .home-1 > .btn-view-1:hover{
   background-color: #002ead;
   transition: 0.7s;
 
- 
+
 }
 
 .sect-1 > .btn-menu {
@@ -471,7 +471,7 @@ li:active {
 }
 
 .login-left {
-  background-color: #0a0a232d;
+  background-color: #f1f1f92d;
   width: 40%;
   height: 65vh;
 }
@@ -492,7 +492,7 @@ li:active {
 }
 .btn-right > .btn-menu{
   background-color: #0a0a23;
-  
+
   color: white;
   padding: 1.5rem 1.5rem;
   text-align: center;
@@ -539,7 +539,7 @@ li:active {
 .login-label > .label-1{
   font-size: 2rem;
   margin-left: 3.8rem;
- 
+
 }
 
 .login-label > input{
@@ -562,7 +562,7 @@ li:active {
   margin-top: 1rem;
   font-size: 1.5rem;
   margin-left: 1rem;
-  
+
 }
 
 .control input,
@@ -575,8 +575,8 @@ li:active {
   margin-left: 1rem;
   width: 90%;
   font-size: 1.5rem;
- 
-  
+
+
 
 }
 
@@ -588,7 +588,7 @@ li:active {
   height: 85vh;
   width: 40vw;
   margin-left: 45rem;
-  
+
 }
 .reg > h1{
   font-size: 2rem;
@@ -624,8 +624,8 @@ li:active {
   flex-wrap: wrap;
   justify-content:space-between;
   padding: 3rem;
- 
-}   
+
+}
 
 .meals{
   display: flex;
@@ -643,7 +643,7 @@ li:active {
 .meals-image > img{
   width: 100%;
   height: 30vh;
-  
+
 }
 .meals-det{
   font-size: 2rem;
@@ -670,8 +670,8 @@ li:active {
   margin-right: 5rem;
   border-radius: 1rem;
   background-color: grey;
-  
- 
+
+
 }
 
 
@@ -696,7 +696,7 @@ li:active {
   min-width: 1rem;
   text-decoration: none;
   font-size: 2rem;
-  
+
 }
 
 
@@ -718,7 +718,7 @@ li:active {
   padding: 1rem;
   padding-bottom: 1rem;
   align-items: center;
- 
+
 }
 
 .min-nav{
@@ -788,7 +788,7 @@ font-size: 2.5rem;
 .meals-image-1 img{
   width: 100%;
   height: 38vh;
-  
+
 }
 .meals-det-1 > h2{
   font-size: 4rem;

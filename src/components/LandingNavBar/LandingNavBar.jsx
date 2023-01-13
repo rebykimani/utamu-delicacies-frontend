@@ -13,7 +13,14 @@ function LandingNavBar() {
             to="/dashboard"
             exact
           >
-            Dashboard
+            Admin
+          </NavLink>
+          <NavLink
+            className="bg-gray-600 py-3 px-6 text-lg rounded-md w-40 hover:bg-gray-500 text-white"
+            to="/home"
+            exact
+          >
+            Customer
           </NavLink>
           <NavLink
             className="bg-gray-600 py-3 px-6 text-lg rounded-md w-40  hover:bg-gray-500 text-white"
@@ -30,6 +37,7 @@ function LandingNavBar() {
           >
             Login
           </NavLink>
+
         </div>
       </div>
     </nav>

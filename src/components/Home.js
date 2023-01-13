@@ -26,7 +26,7 @@ function Home() {
         <div className="sect-1">
           <h1>Delicious Food For Your cravings</h1>
           <p>We Cook Fresh And Healthy Foods With Different Recipes</p>
-          <NavLink to={"/mondaymenu"} exact="true" className="btn-menu">
+          <NavLink to={"/mainmenu"} exact="true" className="btn-menu">
             View-Menu &rarr;
           </NavLink>
         </div>
@@ -53,9 +53,9 @@ function Home() {
       </div>
 
       <section className="about-us">
-     
+
       <div className="about">
-      
+
         <div className="about-image">
           <img src={meat} alt="beef" />
         </div>
@@ -63,14 +63,14 @@ function Home() {
           <h1>History</h1>
           <h3>Strange Stories of Emergence of Healthy Foods</h3>
           <p>
-          You are what you eat, but you're also, to a surprisingly large degree, 
+          You are what you eat, but you're also, to a surprisingly large degree,
           what your parents ate. The Secret History of Food begins with what we consumed in the womb. Crazy isnt?
-         
+
           </p>
           <NavLink to={"/"} exact="true" className="btn-text">
           Read-More
         </NavLink>
-         
+
         </div>
 
         <div className="about-image">
@@ -78,15 +78,15 @@ function Home() {
       </div>
 
 
-    
+
     <div className="about-info">
       <h1>Community</h1>
       <h3>Healthy food in social networks, with us is interesting</h3>
       <p>
-      ocial media, such as Instagram, changed the way many people consume food. 
-      Photos of food are used on Instagram in photographic exchanges to identify and interact with the community 
+      ocial media, such as Instagram, changed the way many people consume food.
+      Photos of food are used on Instagram in photographic exchanges to identify and interact with the community
       and are the second most popular Instagram topic after selfies .
-       
+
       </p>
       <NavLink to={"/"} exact="true" className="btn-text">
       Read-More
@@ -101,22 +101,22 @@ function Home() {
       <h1>Philosophy</h1>
       <h3>Only the Best Food,the best musicians the best guests</h3>
       <p>
-      What's better than good food and music to break the monotony of life! 
-      Be it after a busy workday or over the weekends, 
-      we love meeting up friends for some candid conversation, 
+      What's better than good food and music to break the monotony of life!
+      Be it after a busy workday or over the weekends,
+      we love meeting up friends for some candid conversation,
       foods and drinks.
-       
+
       </p>
       <NavLink to={"/"} exact="true" className="btn-text">
       Read-More
     </NavLink>
     </div>
       </div>
-      
-      
+
+
       </section>
 
-      
+
 
       <section className="section-stories">
         <div className="u-center-text u-margin-bottom-big">
@@ -170,11 +170,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="footer">
+      {/* <section className="footer">
         <div className="sect-footer">
           <div className="right">
             <h1>Utamu delicacies</h1>
-     
+
           </div>
 
           <div className="links">
@@ -200,7 +200,7 @@ function Home() {
             <p>09AM - 09PM</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
