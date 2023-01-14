@@ -344,35 +344,45 @@ export default function Footer() {
       >
         <Grid item xs={6} textAlign={{ md: "left" }}>
           <Box>
-            <Typography
+            <StyledFooterLink
               textAlign={{ xs: "left", md: "left" }}
               paddingX={{ xs: "1rem", lg: 0 }}
             >
               &copy; Copyright Utamu Delicacies All rights reserved.
-            </Typography>
+            </StyledFooterLink>
           </Box>
         </Grid>
         <Grid item xs={3} textAlign={{ md: "left" }}>
           <Box>
-            <Typography
+            <StyledFooterLink
+              sx={{
+                backgroundColor: "#427499",
+                color: "#ffffff",
+                fontSize: "18px",
+              }}
               textAlign={{ xs: "right", md: "right" }}
               paddingX={{ xs: "1rem", lg: 0 }}
               href="./privacy-policy"
             >
               Privacy Policy
-            </Typography>
+            </StyledFooterLink>
           </Box>
         </Grid>
 
         <Grid item xs={3} textAlign={{ md: "left" }}>
           <Box>
-            <Typography
+            <StyledFooterLink
+              sx={{
+                backgroundColor: "#427499",
+                color: "#ffffff",
+                fontSize: "18px",
+              }}
               textAlign={{ xs: "right", md: "right" }}
               paddingX={{ xs: "0rem", lg: 0 }}
               href="./terms-of-use"
             >
               Terms of Service
-            </Typography>
+            </StyledFooterLink>
           </Box>
         </Grid>
       </Grid>
