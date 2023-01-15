@@ -1,3 +1,4 @@
+// import { useState } from React;
 import "./App.css";
 import React, { useState } from "react";
 import Landing from "./components/LandingPage/Landing";
@@ -15,7 +16,7 @@ import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = React.useState(null);
   return (
     <div>
       <Routes>
