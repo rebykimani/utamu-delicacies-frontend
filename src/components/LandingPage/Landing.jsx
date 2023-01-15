@@ -5,8 +5,8 @@ function Landing() {
   return (
     <div className="bg-sky-800">
       <LandingNavBar />
-      <div className="flex flex-row space-x-4 mx-12 my-8 h-2/4">
-        <div class="box-border p-2  bg-slate-400 flex flex-col space-y-4 rounded-md  ">
+      <div className="flex flex-row space-x-4 mx-12 my-8">
+        <div class="box-border p-2  bg-slate-50 flex flex-col space-y-4 rounded-md  ">
           <div className=" max-w-xl grid grid-cols-1 gap-9">
             <h1 className="">DO MORE WITH YOUR TIME</h1>
             <h3 className="text-2xl font-semibold">
