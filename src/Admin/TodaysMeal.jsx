@@ -10,19 +10,19 @@ function TodaysMeal() {
     <br></br>
 
     <div className="flex justify-evenly">
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
       All
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
       BreakFast
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
       Lunch
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
       Beverage
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
       Dinner
      </button>
     </div>
