@@ -42,7 +42,7 @@ function Amount() {
                     </th>
                     <th
                       scope="col"
-                      class="text-sm font-medium  px-6 py-4"
+                      class="text-sm font-medium px-6 py-4"
                     >
                       Total
                     </th>

@@ -1,6 +1,49 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import AdminHearder from "./AdminHearder";
+import AdminCard from "./AdminCard";
 function Dashboard() {
+  // const [meals, setMeals] = useState();
+  // const [mealsList, setMealslist] = useState([]);
+  // const baseUrl = "http://127.0.0.1:3000";
+
+  // useEffect(() => {
+  //   // const baseUrl = "https://polar-tundra-37099.herokuapp.com/products";
+  //   fetch(baseUrl)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setMealslist(data);
+  //     });
+  // }, []);
+
+  // const filterItems = (categItem) => {
+  //   const updatedProducts = mealsList.filter((curElem) => {
+  //     return curElem.category === categItem;
+  //   });
+  //   setMealslist(updatedProducts);
+  // };
+
+  // const allProduct = mealsList.map((productObject) => {
+  //   return <AdminCard key={productObject.id} product={productObject} />;
+  // });
+
+  // function handleSearching(search) {
+  //   setMealslist((productListData) =>
+  //     productListData.filter((products) => products.category.includes(search))
+  //   );
+  // }
+
+  // const handleAddData = (data) => {
+  //   fetch(baseUrl, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((newProduct) => setMeals([...meals, newProduct]));
+  // };
   return (
 
     <div>

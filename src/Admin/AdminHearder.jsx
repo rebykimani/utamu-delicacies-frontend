@@ -1,8 +1,16 @@
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function AdminHearder() {
+function AdminHearder({setIsAuthenticated}) {
+  const navigate = useNavigate();
+  function handleLogout() {
+    localStorage.removeItem("token");
+    setIsAuthenticated(false);
+    navigate("/login");
+  }
+
   return (
     <div className="bg-slate-300">
       <div className="flex justify-evenly">
@@ -39,7 +47,7 @@ function AdminHearder() {
           </NavLink>
           <div className="">
           <a href="login">
-            <div className="flex space-x-4 mt-6 hover:bg-white">
+            <div className="flex space-x-4 mt-6 hover:bg-white" onClick={handleLogout}>
               Logout <FiLogOut size="20px" />
             </div>
           </a>
