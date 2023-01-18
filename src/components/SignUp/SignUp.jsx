@@ -1,189 +1,143 @@
-import React from 'react'
-import { Link, Navigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import Login from "../Login";
 
-function SignUp() {
-// // State to store the values of the input fields
-// const [username, setUsername] = useState("");
-// const [email, setEmail] = useState("");
-// const [password, setPassword] = useState("");
-// const [student, setStudent] = useState(false);
-// const [mentor, setMentor] = useState(false);
+function SignUp({ setStoredToken }) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-// // Flag to indicate if the user has successfully registered
-// const [registered, setRegistered] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
 
-// // Register the user using the provided username, email, and password
-// const handleRegister = () => {
-//   // Validate the provided values
-//   if (!username || !email || !password) {
-//     toast.error("Please enter a valid username, email, and password.", {
-//       position: "top-center",
-//     });
-//     return;
-//   } else if (!student && !mentor) {
-//     toast.error("Please select either student or mentor", {
-//       position: "top-center",
-//     });
+  // const API = "http://localhost:3000";
 
-//     return;
-//   }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("http://127.0.0.1:3000/customers", {
+      method: "POST",
+      headers: {
+        Accepts: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        customers: {
+          name,
+          email,
+          password,
+        },
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        localStorage.setItem("token", data.jwt);
+        console.log(data);
+        setStoredToken(data.jwt);
+      });
+    setName("");
+    setEmail("");
+    setPassword("");
+  };
 
-//   // Create a new user object
-//   const newUser = {
-//     username,
-//     email,
-//     password,
-//     student,
-//     mentor,
-//   };
-//   console.log(newUser);
-//   // Send the new user object to the backend API for registration
-//   fetch("https://arcane-lake-46873.herokuapp.com/register", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(newUser),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       if (data.error) {
-//         toast.error(data.message, {
-//           position: "top-center",
-//         });
-//       } else {
-//         toast.success("Signed up successfully", {
-//           position: "top-center",
-//         });
-//       }
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsAuthenticated(true);
+      navigate("/home");
+    }
+  }, []);
 
-//       // Set the registered flag to true
-//       setRegistered(true);
-//     });
-// };
+  // function handleRegister(event) {
+  //   event.preventDefault();
+  //   // Send a request to the server to register the user
+  //   // ...
+  //   // In the response, get the token and store it in local storage
+  //   localStorage.setItem("token", "token");
+  //   setIsAuthenticated(true);
+  //   navigate("/dashboard");
+  // }
 
-// // If the user has successfully registered, redirect them to the login page
-// if (registered) {
-//   return <Navigate to="/login" />;
-// }
+  // function handleLogout() {
+  //   localStorage.removeItem("token");
+  //   setIsAuthenticated(false);
+  //   navigate("/login");
+  // }
 
-return (
-<div className='bg-sky-800'>
-  <div>
-    <br></br>
-    <h1 className='text-center text-white font-mono text-4xl'> WELCOME TO UTAMU DELICACIES</h1>
+  return (
+    <div className="bg-sky-800">
+      <div>
+        <br></br>
+        <h1 className="text-center text-white font-mono text-4xl">
+          {" "}
+          WELCOME TO UTAMU DELICACIES
+        </h1>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <div className="flex flex-row space-x-4 mx-44 my-8 ">
+          <img className="rounded-t-md" src={require("./food.jpg")} alt="" />
+          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6" onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="username"
+              >
+                Username
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                placeholder="Username"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                placeholder="******************"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <button onClick={handleSubmit} className="bg-cyan-500 rounded-full p-2 hover:bg-cyan-300">Submit</button>
+            <p>Already have an account?</p>
+          <Link to="/login" className="bg-cyan-500 rounded-full p-2 w-8 hover:bg-cyan-300">Login</Link>
+          </form>
+
+
+          {/* // <ToastContainer /> */}
+          {/* {registered && <Navigate to="/login" />} */}
+        </div>
+      </div>
     </div>
-
-    {/* <div className="flex items-center justify-center">
-     */}
-      <div className="flex flex-row space-x-4 mx-44 my-8 ">
-        <img
-          className="rounded-t-md"
-          src={require("./food.jpg")}
-          alt=""
-        />
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6">
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="username"
-          >
-            Username
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Username"
-        //     value={username}
-        //     onChange={(event) => setUsername(event.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Email"
-            // value={email}
-            // onChange={(event) => setEmail(event.target.value)}
-          />
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="password"
-          >
-            Password
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
-            type="password"
-            placeholder="******************"
-            // value={password}
-            // onChange={(event) => setPassword(event.target.value)}
-          />
-        </div>
-        <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
-            Select your role
-          </label>
-          <label className="px-3">
-            <input
-              className="px-4"
-              type="radio"
-            //   checked={student}
-            //   onChange={() => {
-            //     setStudent(true);
-            //     setMentor(false);
-            //   }}
-            />
-            Admin
-          </label>
-          <label>
-            <input
-              type="radio"
-            //   checked={mentor}
-            //   onChange={() => {
-            //     setMentor(true);
-            //     setStudent(false);
-            //   }}
-            />
-            Customer
-          </label>
-        </div>
-
-        <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            // type="button"
-            // onClick={handleRegister}
-          >
-            Register
-          </button>
-          <Link
-            to="/login"
-            className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-          >
-            Already have an account?
-          </Link>
-        </div>
-      </form>
-      <ToastContainer />
-      {/* {registered && <Navigate to="/login" />} */}
-    </div>
-
-  </div>
-);
-};
-
-
-export default SignUp
+  );
+}
+export default SignUp;

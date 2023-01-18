@@ -471,13 +471,14 @@ li:active {
   display: flex;
   padding: 5rem;
   margin-left: 20rem;
+  height: 140vh;
 
 }
 
 .login-left {
-  background-color: #f1f1f92d;
+  background-color: #e3e3eae3;
   width: 40%;
-  height: 65vh;
+
 }
 .login-left > img {
   border-radius: 50%;
@@ -492,7 +493,8 @@ li:active {
 .login-right {
   padding-top: 2rem;
   width: 40%;
-  background-color: rgba(128, 128, 128, 0.103);
+  background-color: rgb(245, 242, 242);
+
 }
 .btn-right > .btn-menu{
   background-color: #0a0a23;

@@ -15,6 +15,7 @@ import MainMenu from "./components/MainMenu";
 import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
 
+
 function App() {
   const [user, setUser] = React.useState(null);
   return (
