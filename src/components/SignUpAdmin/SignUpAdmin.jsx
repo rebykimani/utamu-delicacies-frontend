@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import Login from "../Login";
 
-function SignUp({ setStoredToken }) {
+function SignUpAdmin({ setStoredToken }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -45,7 +45,7 @@ function SignUp({ setStoredToken }) {
     const token = localStorage.getItem("token");
     if (token) {
       setIsAuthenticated(true);
-      navigate("/home");
+      navigate("/dashboard");
     }
   }, []);
 
@@ -127,7 +127,7 @@ function SignUp({ setStoredToken }) {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <Link to="/home" className="bg-cyan-500 rounded-full p-2 hover:bg-cyan-300">Submit</Link>
+            <Link to="/dashboard" className="bg-cyan-500 rounded-full p-2 hover:bg-cyan-300">Submit</Link>
             <p>Already have an account?</p>
           <Link to="/login" className="bg-cyan-500 rounded-full p-2 w-8 hover:bg-cyan-300">Login</Link>
           </form>
@@ -140,4 +140,4 @@ function SignUp({ setStoredToken }) {
     </div>
   );
 }
-export default SignUp;
+export default SignUpAdmin;

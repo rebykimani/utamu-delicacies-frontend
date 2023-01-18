@@ -13,6 +13,7 @@ import Home from "./components/Home";
 import MainMenu from "./components/MainMenu";
 import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
+import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<SignUp />} />
+        <Route exact path="/registeradmin" element={<SignUpAdmin />} />
         <Route exact path="/todaysMeal" element={<TodaysMeal />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/order" element={<Order />} />

@@ -18,7 +18,7 @@ body {
   line-height: 1.7;
   padding: 2rem;
   box-sizing: border-box;
-  background-color:rgb(7 89 133);;
+  /* background-color:rgb(155, 145, 103);; */
 
   /* font-weight: 400;
   font-size: 1.6rem;
@@ -471,13 +471,13 @@ li:active {
   display: flex;
   padding: 5rem;
   margin-left: 20rem;
-  height: 140vh;
+  /* height: 150vh; */
 
 }
 
 .login-left {
   background-color: #e3e3eae3;
-  width: 40%;
+  width: 60%;
 
 }
 .login-left > img {

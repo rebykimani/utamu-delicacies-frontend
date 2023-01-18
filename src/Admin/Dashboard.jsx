@@ -48,24 +48,24 @@ function Dashboard() {
 
     <div>
       <AdminHearder/>
-    <div className="bg-sky-800">
+    <div className="bg-orange-50">
       <br></br>
       <br></br>
 
       <div className="flex justify-evenly">
-       <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
+       <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
         All
        </button>
-       <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
+       <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
         BreakFast
        </button>
-       <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
+       <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
         Lunch
        </button>
-       <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
+       <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
         Beverage
        </button>
-       <button className="rounded-full bg-gray-300 h-10 w-32 hover:bg-gray-100">
+       <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
         Dinner
        </button>
       </div>
@@ -92,7 +92,7 @@ function Dashboard() {
           <div className="flex space-x-4 ">
           <a
             href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-400 dark:focus:ring-orange-300"
           >
             Add Meal
             <svg
@@ -111,7 +111,7 @@ function Dashboard() {
           </a>
           <a
             href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-400 dark:focus:ring-orange-300"
           >
             Delete
             <svg
@@ -130,7 +130,7 @@ function Dashboard() {
           </a>
           <a
             href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-400 dark:focus:ring-orange-300"
           >
             Modify
             <svg
