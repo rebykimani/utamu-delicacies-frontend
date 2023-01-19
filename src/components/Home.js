@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 import food from "../components/img/foof.jpg";
 import rice from "../components/img/Beef-fries.jpg";
 import beef from "../components/img/rice.jpg";
@@ -11,6 +12,7 @@ import meat from "../components/img/meat.jpg";
 import NavBarLanding from "./NavBarLanding";
 
 import "../App.css";
+
 function Home() {
   return (
     <div className="bg-sky-800 mb-7">
@@ -165,7 +167,14 @@ function Home() {
             Read all stories &rarr;
           </a>
         </div>
-      </section>
+      
+        
+        <div classname="u-center-text u-margin-top-huge">
+          { <a class="bn49" href="/">add story</a> }
+          
+          </div>
+         
+       </section>
 
       {/* <section className="footer">
         <div className="sect-footer">

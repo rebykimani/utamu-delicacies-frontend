@@ -387,7 +387,23 @@ body {
   padding: 15rem 0;
   background-color: rgb(7 89 133);;
 }
-
+.bn49 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  margin: 50px;
+  position: absolute;
+  left: 40%;
+  color: black;
+  background-color:orange;
+  border-radius: 50px;
+  font-family: "proxima-nova-soft", sans-serif;
+  font-weight: 1000;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+}
 /*end of reviews part*/
 
 .u-center-text {
