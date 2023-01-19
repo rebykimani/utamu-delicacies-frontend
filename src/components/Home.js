@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import food from "../components/img/foof.jpg";
 import rice from "../components/img/Beef-fries.jpg";
@@ -165,7 +166,9 @@ function Home() {
             Read all stories &rarr;
           </a>
         </div>
+        <Link to="/addReview" className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3">Add Review</Link>
       </section>
+
 
       {/* <section className="footer">
         <div className="sect-footer">

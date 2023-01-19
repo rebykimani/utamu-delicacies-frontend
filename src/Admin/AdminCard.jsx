@@ -1,30 +1,58 @@
-import React from 'react'
+import React from "react";
+import "./Cards.css";
+import { useParams, useNavigate } from "react-router-dom";
 
-function AdminCard({meals}) {
-    return (
-        <div className="col" id="allCard">
-          <div className="card" style={{ width: 18 + "rem" }}>
-            <img src={meals.image} alt="" className="image" />
-            <div className="card-body"></div>
-            <div className="card__info">
-              <h2>Title:{meals.name}</h2>
-              <h4>Price:{meals.price}</h4>
-              <h4>Description:{meals.description}</h4>
-              <h4>Catgory:{meals.category}</h4>
-              <div>
-                <button
-                  id="button"
-                  onClick={() => {
-                    alert("Your meals Has Been Added to Cart");
-                  }}
-                >
-                  Add to Cart
-                </button>
-              </div>
+function AdminCard({ name, price, image, category, description }) {
+  const navigate = useNavigate();
+  const { id } = useParams();
+
+  const handleClick = () => {
+    console.log(id);
+    fetch("http://127.0.0.1:3000/meals" + id, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then(() => {
+        navigate("/dashboard");
+      });
+  };
+
+  return (
+    <div className="col" id="allCard">
+      <div className="card" style={{ width: 35 + "rem" }}>
+        <img src={image} alt="" className="image" />
+        <div className="card-body"></div>
+        <div className="card__info">
+          <h2>Title:{name}</h2>
+          <h2>Title:{price}</h2>
+          <h5>Catgory:{category}</h5>
+          <h4>Description:{description}</h4>
+          <div>
+            <div className="flex space-x-4">
+              <button
+                className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300 "
+                // onClick={handleClick}
+              >
+                Add Meal
+              </button>
+              <button
+                className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300"
+                onClick={handleClick}
+              >
+                Delete Meal
+              </button>
+              <button
+                className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300"
+                // onClick={handleClick}
+              >
+                Modify Meal
+              </button>
             </div>
           </div>
         </div>
-      );
-    }
+      </div>
+    </div>
+  );
+}
 
-export default AdminCard
+export default AdminCard;
