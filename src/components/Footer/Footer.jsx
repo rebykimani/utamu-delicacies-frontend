@@ -21,22 +21,22 @@ import { styled } from "@mui/material/styles";
 import FooterLogo from "../../Assets/logo.png";
 
 export const StyledFooterLink = styled(Link)({
-  color: "#000000",
+  color: "#ffffff",
   fontSize: "18px",
   textDecoration: "none",
   "&:hover": {
     fontWeight: "bold",
     paddingBottom: "0.15rem",
-    borderBottom: "3px solid #427499",
+    borderBottom: "3px solid #FFA726",
   },
   "&:focus": {
     fontWeight: "bold",
     paddingBottom: "0.15rem",
-    borderBottom: "3px solid #427499",
+    borderBottom: "3px solid #FFA726",
   },
 });
 const StyledFooterLinkNoBold = styled(Link)({
-  color: "#000000",
+  color: "#ffffff",
   textDecoration: "none",
   fontSize: "18px",
 
@@ -44,13 +44,13 @@ const StyledFooterLinkNoBold = styled(Link)({
   "&:hover": {
     fontWeight: "bold",
     paddingBottom: "1rem",
-    borderBottom: "3px solid ##427499",
+    borderBottom: "3px solid #FFA726",
     //   color: "#009966",
   },
   "&:focus": {
     fontWeight: "bold",
     paddingBottom: "0.15rem",
-    borderBottom: "3px solid #427499",
+    borderBottom: "3px solid #FFA726",
   },
 });
 
@@ -68,8 +68,8 @@ export default function Footer() {
         paddingTop={{ xs: "1rem", lg: "3rem" }}
         // paddingBottom={{ xs: "1rem", lg: "0.5rem" }}
         // marginLeft="1rem"
-        backgroundColor="#D9D9D9"
-        color="#000000"
+        backgroundColor="#000000"
+        color="#ffffff"
       >
         <Grid
           container
@@ -84,7 +84,7 @@ export default function Footer() {
           >
             <Box>
               <img src={FooterLogo} />
-              <Box color="#000">Your meal Partner</Box>
+              <Box color="#ffffff">Your meal Partner</Box>
               <StyledFooterLinkNoBold
                 rel="noopener"
                 href="https://www.google.com/maps/place/Galana+Plaza/@-1.2909263,36.7801562,17z/data=!3m1!4b1!4m5!3m4!1s0x182f10a769c149df:0x4b9b40aa6cabe2e2!8m2!3d-1.2909317!4d36.7827311"
@@ -95,9 +95,9 @@ export default function Footer() {
                     fontSize="large"
                     paddingX={{ sm: "1rem" }}
                     sx={{
-                      color: "#000000",
+                      color: "#ffffff",
                       "&:hover,&:focus": {
-                        color: "#427499",
+                        color: "#FFA726",
                       },
                     }}
                   />{" "}
@@ -144,7 +144,7 @@ export default function Footer() {
                       fontSize: 40,
                       color: "#25D366",
                       "&:hover,&:focus": {
-                        color: "#427499",
+                        color: "#FFA726",
                       },
                     }}
                   />
@@ -204,9 +204,9 @@ export default function Footer() {
                   fontSize="large"
                   paddingX={{ sm: "1rem" }}
                   sx={{
-                    color: "#000000",
+                    color: "#ffffff",
                     "&:hover,&:focus": {
-                      color: "#427499",
+                      color: "#FFA726",
                     },
                   }}
                 />
@@ -223,9 +223,9 @@ export default function Footer() {
                   fontSize="large"
                   paddingX={{ sm: "1rem" }}
                   sx={{
-                    color: "#000000",
+                    color: "#ffffff",
                     "&:hover,&:focus": {
-                      color: "#427499",
+                      color: "#FFA726",
                     },
                   }}
                 />
@@ -251,9 +251,9 @@ export default function Footer() {
                       fontSize="large"
                       paddingX={{ sm: "1rem" }}
                       sx={{
-                        color: "#000000",
+                        color: "#ffffff",
                         "&:hover,&:focus": {
-                          color: "#427499",
+                          color: "#FFA726",
                         },
                       }}
                     />
@@ -270,9 +270,9 @@ export default function Footer() {
                       fontSize="large"
                       paddingX={{ sm: "1rem" }}
                       sx={{
-                        color: "#000000",
+                        color: "#ffffff",
                         "&:hover,&:focus": {
-                          color: "#427499",
+                          color: "#FFA726",
                         },
                       }}
                     />
@@ -288,9 +288,9 @@ export default function Footer() {
                       fontSize="large"
                       paddingX={{ sm: "1rem" }}
                       sx={{
-                        color: "#000000",
+                        color: "#ffffff",
                         "&:hover,&:focus": {
-                          color: "#427499",
+                          color: "#FFA726",
                         },
                       }}
                     />
@@ -306,9 +306,9 @@ export default function Footer() {
                       fontSize="large"
                       paddingX={{ sm: "1rem" }}
                       sx={{
-                        color: "#000000",
+                        color: "#ffffff",
                         "&:hover,&:focus": {
-                          color: "#427499",
+                          color: "#FFA726",
                         },
                       }}
                     />
@@ -323,9 +323,9 @@ export default function Footer() {
                       fontSize="large"
                       paddingX={{ sm: "1rem" }}
                       sx={{
-                        color: "#000000",
+                        color: "#ffffff",
                         "&:hover,&:focus": {
-                          color: "#427499",
+                          color: "#FFA726",
                         },
                       }}
                     />
@@ -340,7 +340,7 @@ export default function Footer() {
         container
         columns={{ xs: 3, md: 6, lg: 15, xl: 15 }}
         justify="center"
-        sx={{ backgroundColor: "#427499", color: "#ffffff" }}
+        sx={{ backgroundColor: "#ffffff", color: "#000000" }}
       >
         <Grid item xs={6} textAlign={{ md: "left" }}>
           <Box>
@@ -356,8 +356,8 @@ export default function Footer() {
           <Box>
             <StyledFooterLink
               sx={{
-                backgroundColor: "#427499",
-                color: "#ffffff",
+                // backgroundColor: "#FFA726",
+                color: "#000000",
                 fontSize: "18px",
               }}
               textAlign={{ xs: "right", md: "right" }}
@@ -373,8 +373,8 @@ export default function Footer() {
           <Box>
             <StyledFooterLink
               sx={{
-                backgroundColor: "#427499",
-                color: "#ffffff",
+                // backgroundColor: "#FFA726",
+                color: "#000000",
                 fontSize: "18px",
               }}
               textAlign={{ xs: "right", md: "right" }}

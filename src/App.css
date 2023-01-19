@@ -15,10 +15,10 @@ html {
 }
 body {
   font-family: "lato", sans-serif;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   padding: 2rem;
   box-sizing: border-box;
-  background-color:rgb(7 89 133);;
+  /* background-color: rgb(7 89 133); */
 
   /* font-weight: 400;
   font-size: 1.6rem;
@@ -29,14 +29,12 @@ body {
 
 /*start of navbar*/
 
-.navs{
+.navs {
   margin: 2rem;
   padding-left: 5rem;
-
 }
-.navs > .btn-view-2{
- margin: .5rem;
-
+.navs > .btn-view-2 {
+  margin: 0.5rem;
 }
 .nav {
   display: flex;
@@ -70,8 +68,6 @@ body {
 
 /*start of home*/
 
-
-
 /* .btn-view-1 {
   background-color: white;
   border: none;
@@ -91,14 +87,18 @@ body {
   transition: 0.7s;
 } */
 
-
-
-
 /* .home-1 {
 
-
 } */
-.home-1 > .btn-view-1{
+.register-btn {
+  padding: 1.5rem;
+  width: 70px;
+  background-color: orange;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.home-1 > .btn-view-1 {
   margin-left: 1rem;
   background-color: aqua;
   border: none;
@@ -112,29 +112,26 @@ body {
   font-weight: 700;
   border-radius: 1rem;
   margin-top: 1rem;
-
 }
 
-.home-1 > .btn-view-1:hover{
+.home-1 > .btn-view-1:hover {
   background-color: #002ead;
   transition: 0.7s;
-
-
 }
 
 .sect-1 > .btn-menu {
   background-color: #0a0a23;
   border: none;
   color: white;
-  padding: 1.5rem 1.5rem;
+  /* padding: 1.5rem 1.5rem; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  border-bottom-left-radius: 1.5rem;
+  /* border-bottom-left-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem; */
   margin-top: 6rem;
 }
 .btn-menu:hover {
@@ -240,7 +237,7 @@ body {
 .about-us {
   text-align: center;
   font-size: 3rem;
-  background-color:rgb(7 89 133);;
+  background-color: rgb(7 89 133);
 }
 .about {
   display: flex;
@@ -260,8 +257,6 @@ body {
   text-align: center;
   background-color: aliceblue;
   border-radius: 1rem;
-
-
 }
 
 .about-info > p {
@@ -385,7 +380,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: rgb(7 89 133);;
+  background-color: rgb(7 89 133);
 }
 
 /*end of reviews part*/
@@ -442,17 +437,17 @@ body {
 
 li:link,
 .li:visited {
-  font-size: 2rem;
+  font-size: 16px;
   color: #0a0a23;
   display: inline-block;
   text-decoration: none;
   border-bottom: 0.1rem solid #0a0a23;
-  padding: 0.3rem;
+  /* padding: 0.3rem; */
 }
 
 li:hover {
   font-size: 2.5rem;
-  background-color: rgb(7 89 133);;
+  /* background-color: rgb(7 89 133); */
   color: whitesmoke;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -471,14 +466,14 @@ li:active {
   display: flex;
   padding: 5rem;
   margin-left: 20rem;
-  height: 140vh;
+  width: 80%;
 
+  /* height: 140vh; */
 }
 
 .login-left {
   background-color: #e3e3eae3;
   width: 40%;
-
 }
 .login-left > img {
   border-radius: 50%;
@@ -491,47 +486,49 @@ li:active {
 }
 
 .login-right {
-  padding-top: 2rem;
-  width: 40%;
-  background-color: rgb(245, 242, 242);
-
+  margin-left: 3rem;
+  /* padding-top: 2rem;
+  width: 40%; */
+  /* background-color: rgb(245, 242, 242); */
 }
-.btn-right > .btn-menu{
-  background-color: #0a0a23;
-
-  color: white;
-  padding: 1.5rem 1.5rem;
+.btn-right > .btn-menu {
+  background-color: #ffa726;
+  color: #ffffff;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
-  border-bottom-left-radius: 1.5rem;
+  /* border-bottom-left-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem; */
+  display: flex-end;
+  width: 100px;
+  border-radius: 40px;
   margin-top: 1rem;
   margin-left: 17rem;
 }
-.login-right > p{
- font-size: 2rem;
- letter-spacing: .4rem;
- text-align: center;
- margin: 1rem;
- font-weight: 900;
+.login-right > p {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin: 1rem;
+  font-weight: 900;
 }
-.btn-right > .link{
-  font-size: 1.3rem;
+.btn-right > .link {
+  font-size: 16px;
   text-align: center;
   margin-top: 1rem;
   font-weight: 900;
- }
-.login-right > h1{
+}
+.login-right > h1 {
   font-size: 3rem;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: 3rem;
- }
+}
 .login-label {
   display: block;
   padding: 2rem;
@@ -539,26 +536,23 @@ li:active {
   margin-right: auto;
 }
 
-.login-label > label{
+.login-label > label {
   font-size: 2rem;
 }
-.login-label > .label-1{
+.login-label > .label-1 {
   font-size: 2rem;
   margin-left: 3.8rem;
-
 }
 
-.login-label > input{
-
+.login-label > input {
   border-radius: 1rem;
-  border: .2rem solid #ccc;
+  border: 0.2rem solid #ccc;
   padding: 1rem;
   margin-left: 1rem;
   width: 60%;
   font-size: 1.5rem;
 }
 /*end of login*/
-
 
 /*start of sign-up*/
 
@@ -568,7 +562,6 @@ li:active {
   margin-top: 1rem;
   font-size: 1.5rem;
   margin-left: 1rem;
-
 }
 
 .control input,
@@ -576,34 +569,30 @@ li:active {
   display: block;
   font: inherit;
   border-radius: 1rem;
-  border: .1rem solid #ccc;
+  border: 0.1rem solid #ccc;
   padding: 1rem;
   margin-left: 1rem;
   width: 90%;
   font-size: 1.5rem;
-
-
-
 }
 
-.reg{
+.reg {
   border-radius: 1rem;
   background-color: #0a0a2356;
   margin-top: 5rem;
   padding: 3rem;
-  height: 85vh;
+  /* height: 85vh; */
   width: 40vw;
   margin-left: 45rem;
-
 }
-.reg > h1{
+.reg > h1 {
   font-size: 2rem;
   text-align: center;
 }
-.reg > .btn-menu{
+.reg > .btn-menu {
   background-color: grey;
   border: none;
-  color:skyblue;
+  color: skyblue;
   padding: 1.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -614,47 +603,56 @@ li:active {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   margin-top: 4rem;
-  margin-left: 20rem ;
-
+  margin-left: 20rem;
 }
-
 
 /*All meals*/
 
-
-
-
-
-.meals-container{
+.meals-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 3rem;
-
 }
 
-.meals{
+.meals {
   display: flex;
 }
-.meals-dets{
+.meals-dets {
   background-color: rgba(128, 128, 128, 0.411);
   border-radius: 2rem;
   margin: 2rem;
   padding-bottom: 2rem;
 }
 
-.meals-image > img{
+.meals-image > img {
   object-fit: cover;
 }
-.meals-image > img{
+.meals-image > img {
   width: 100%;
   height: 30vh;
-
 }
-.meals-det{
+.meals-det {
   font-size: 2rem;
   padding-left: 1rem;
   line-height: 1.7;
+}
+
+.input-field {
+  font-size: 16px;
+  margin-top: 2rem;
+  /* align-items: center; */
+  /* display: flex; */
+}
+.field {
+  padding: 12px;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  font-size: 16px;
+  width: 30rem;
+  margin-left: 3rem;
+  color: #000000;
+  background-color: orange !important;
 }
 /* .meals-det-1 > h1{
   font-size: 3.5rem;
@@ -666,8 +664,7 @@ li:active {
   color: red;
 } */
 
-
-.meals-board-one{
+.meals-board-one {
   padding: 1rem;
   padding-bottom: 1rem;
   align-items: center;
@@ -676,12 +673,9 @@ li:active {
   margin-right: 5rem;
   border-radius: 1rem;
   background-color: grey;
-
-
 }
 
-
-.board-one{
+.board-one {
   text-align: center;
   padding: 1rem;
   font-size: 2.5rem;
@@ -691,9 +685,9 @@ li:active {
   color: navy;
   margin-left: 30px;
 }
-.btn-view{
+.btn-view {
   background-color: grey;
-  color:black;
+  color: black;
   border: none;
   border-radius: 1rem;
   padding: 1.2rem;
@@ -702,16 +696,14 @@ li:active {
   min-width: 1rem;
   text-decoration: none;
   font-size: 2rem;
-
 }
 
-
-.btn-meals{
+.btn-meals {
   display: flex;
   flex-wrap: wrap;
 }
 
-.board{
+.board {
   text-align: center;
   padding: 1rem;
   font-size: 2.5rem;
@@ -720,18 +712,16 @@ li:active {
   border-radius: 2rem;
   color: white;
 }
-.meals-board{
+.meals-board {
   padding: 1rem;
   padding-bottom: 1rem;
   align-items: center;
-
 }
 
-.min-nav{
+.min-nav {
   display: flex;
   justify-content: space-between;
 }
-
 
 .btn-view-2 {
   background-color: #0a0a23;
@@ -741,148 +731,133 @@ li:active {
   text-align: center;
   text-decoration: none;
 
-
   font-size: 2rem;
   font-weight: 700;
   border-radius: 1rem;
   margin-top: 1rem;
 }
 
-
-.btn-view-2:hover{
+.btn-view-2:hover {
   background-color: #002ead;
   transition: 0.7s;
-
 }
 
-.btn-view:hover{
+.btn-view:hover {
   background-color: #002ead;
   transition: 0.7s;
-
 }
-
-
 
 /* end of allartsDEtails */
 
-.meals-dets-1{
+.meals-dets-1 {
   box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 2rem;
   padding: 2rem;
   width: 80%;
   margin-top: 2rem;
-
 }
-.det-container{
+.det-container {
   padding-left: 25rem;
-
 }
-.meals-det-1{
-  background-color:white;
+.meals-det-1 {
+  background-color: white;
   border-radius: 3rem;
   /* margin: 3rem; */
   padding-bottom: 3rem;
-
 }
-.meals-det-1 > h5{
-font-size: 2.5rem;
+.meals-det-1 > h5 {
+  font-size: 2.5rem;
 }
-.meals-image-1{
+.meals-image-1 {
   object-fit: cover;
 }
-.meals-image-1 img{
+.meals-image-1 img {
   width: 100%;
   height: 38vh;
-
 }
-.meals-det-1 > h2{
+.meals-det-1 > h2 {
   font-size: 4rem;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   font-weight: 900;
   color: black;
 }
-.meals-det-1 >h3{
+.meals-det-1 > h3 {
   font-size: 3rem;
   font-weight: 800;
   color: black;
 }
-.meals-det-1 > h4{
+.meals-det-1 > h4 {
   font-size: 2rem;
 }
-.meals-con{
+.meals-con {
   padding-left: 20rem;
 }
 
-
 /*End All meals*/
 
-.paginationBtns{
-  width:80%;
+.paginationBtns {
+  width: 80%;
   height: 2rem;
   list-style: none;
   display: flex;
   justify-content: center;
-
 }
-.paginationBtns a{
+.paginationBtns a {
   padding: 1rem;
-  margin: .8rem;
+  margin: 0.8rem;
   border-radius: 1rem;
-  border: .1rem solid black;
+  border: 0.1rem solid black;
   color: #2b2eff;
   cursor: pointer;
 }
-.paginationBtns a:hover{
+.paginationBtns a:hover {
   color: white;
   background-color: #2b2eff;
 }
-.paginationActive{
+.paginationActive {
   color: white;
   background-color: #2b2eff;
-
 }
 
-.profile{
+.profile {
   width: 50%;
-  background-color:skyblue;
+  background-color: skyblue;
   margin-left: 40rem;
   margin-top: 5rem;
-  height: 60vh;
+  /* height: 60vh; */
 }
 
-.profile-image{
+.profile-image {
   padding-left: 8rem;
   margin: 1rem;
 }
-.profile-image > img{
+.profile-image > img {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
-.profile-dets > .btn-view{
+.profile-dets > .btn-view {
   margin-left: 8rem;
 }
 
-.profile-dets > p{
+.profile-dets > p {
   margin-left: 8rem;
   font-size: 2rem;
-
 }
 
-.orders-container{
+.orders-container {
   width: 50%;
   background-color: rgba(128, 128, 128, 0.356);
   margin-left: 40rem;
   margin-top: 10rem;
 }
-.orders-container > h1{
+.orders-container > h1 {
   font-size: 4rem;
   text-align: center;
 }
 
-
-.orders-container > .header{
-  display:flex;
+.orders-container > .header {
+  display: flex;
   justify-content: space-between;
   margin-left: 12rem;
   margin-right: 10rem;
@@ -890,15 +865,15 @@ font-size: 2.5rem;
   padding: 1rem;
 }
 
-.order-details{
+.order-details {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
 }
-span{
+span {
   font-size: 3rem;
   font-weight: 900;
 }
-hr{
+hr {
   border-color: #0a0a23;
 }

@@ -23,9 +23,6 @@ const navItems = [
   <NavLink to="/">Home</NavLink>,
   <NavLink to="/mainmenu">Menu</NavLink>,
   <NavLink to="/cart">Cart</NavLink>,
-  <NavLink to="/dashboard">Admin</NavLink>,
-  <NavLink to="/register">Register</NavLink>,
-  <NavLink to="/logout">Logout</NavLink>,
 ];
 
 export default function DrawerAppBar(props) {
@@ -59,10 +56,7 @@ export default function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar
-        component="nav"
-        sx={{ backgroundColor: "#000000", color: "#ffffff" }}
-      >
+      <AppBar component="nav" sx={{ backgroundColor: "#fff" }}>
         <Toolbar>
           <IconButton
             // color="inherit"
@@ -78,7 +72,7 @@ export default function DrawerAppBar(props) {
             component="div"
             sx={{
               flexGrow: 1,
-              color: "#ffffff",
+              color: "#000000",
               display: { xs: "none", sm: "block" },
             }}
           >
@@ -86,7 +80,7 @@ export default function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#ffffff" }}>
+              <Button key={item} sx={{ color: "#000000" }}>
                 {item}
               </Button>
             ))}
@@ -120,62 +114,3 @@ export default function DrawerAppBar(props) {
     </Box>
   );
 }
-
-// import React from "react";
-// import { NavLink, Link } from "react-router-dom";
-// import "../App.css";
-
-// function Navbar({ user }) {
-//   return (
-//     <div>
-//       <nav className="nav">
-//         <div className="site-title">
-//           <NavLink to={"/"} exact="true">
-//             Utamu delicacies
-//           </NavLink>
-//         </div>
-//         <div className="items">
-//           <ul>
-//             <NavLink to={"/home"} exact="true" className="btn-text">
-//               Home
-//             </NavLink>
-
-//             <Link to={"/login"} className="btn-text">
-//               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
-//             </Link>
-
-//             <NavLink to={"/admin-orders"} exact="true" className="btn-text">
-//               Orders
-//             </NavLink>
-//           </ul>
-//         </div>
-//       </nav>
-//       <div className="meals-board-one">
-//         <h1 className="board-one">Daily Menus: </h1>
-//         <Link to={`/mondaymenu`}>
-//           <button className="btn-view">Monday</button>
-//         </Link>
-//         <Link to={`/tuesdaymenu`}>
-//           <button className="btn-view">Tuesday</button>
-//         </Link>
-//         <Link to={`/wednesdaymenu`}>
-//           <button className="btn-view">Wednesday</button>
-//         </Link>
-//         <Link to={`/thursdaymenu`}>
-//           <button className="btn-view">Thursday</button>
-//         </Link>
-//         <Link to={`/fridaymenu`}>
-//           <button className="btn-view">Friday</button>
-//         </Link>
-//         <Link to={`/saturdaymenu`}>
-//           <button className="btn-view">Saturday</button>
-//         </Link>
-//         <Link to={`/sundaymenu`}>
-//           <button className="btn-view">Sunday</button>
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
