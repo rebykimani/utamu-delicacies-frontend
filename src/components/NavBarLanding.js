@@ -1,8 +1,17 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi";
 
-function Navbar({ user }) {
+
+function Navbar({ setIsAuthenticated }) {
+  const navigate = useNavigate();
+  function handleLogout() {
+    localStorage.removeItem("token");
+    setIsAuthenticated(false);
+    navigate("/login");
+  }
   return (
     <div>
       <nav className="bg-slate-200 flex items-center justify-between h-36 ">
@@ -18,13 +27,20 @@ function Navbar({ user }) {
               Home
             </NavLink>
 
-            <Link to={"/profile"} className="btn-text">
+            {/* <Link to={"/profile"} className="btn-text">
               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
-            </Link>
+            </Link> */}
 
             <NavLink to={"/cart"} exact="true" className="btn-text mr-4">
               Cart
             </NavLink>
+            <div className="btn-text mr-4">
+            <a href="/">
+            <div className="flex space-x-4 mt-6 hover:bg-white" onClick={handleLogout}>
+              Logout <FiLogOut size="20px" />
+            </div>
+          </a>
+        </div>
           </ul>
         </div>
       </nav>
