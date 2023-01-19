@@ -237,7 +237,7 @@ body {
 .about-us {
   text-align: center;
   font-size: 3rem;
-  background-color: rgb(7 89 133);
+  background-color: #fef2fe;
 }
 .about {
   display: flex;
@@ -380,7 +380,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: rgb(7 89 133);
+  background-color: #fef2fe;
 }
 
 /*end of reviews part*/
