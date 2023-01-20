@@ -1,6 +1,6 @@
 // import { useState } from React;
 import "./App.css";
-import React, { useState } from "react";
+import React,{useState} from "react";
 import Landing from "./components/LandingPage/Landing";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
@@ -15,10 +15,11 @@ import MainMenu from "./components/MainMenu";
 import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
 import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
+import AddNewMeal from "./Admin/AddNewMeal";
+import AddReview from "./components/LandingPage/AddReview";
 
 
 function App() {
-  const [user, setUser] = React.useState(null);
   return (
     <div>
       <Routes>
@@ -33,6 +34,9 @@ function App() {
         <Route exact path="/mainmenu" element={<MainMenu />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/addNewMeal" element={<AddNewMeal />} />
+        <Route exact path="/addReview" element={<AddReview />} />
+
         {/* <Route exact path="/mondaymenu  */}
       </Routes>
       {/* <Dashboard /> */}
