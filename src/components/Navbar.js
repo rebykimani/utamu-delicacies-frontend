@@ -13,11 +13,11 @@ function Navbar({ user }) {
         </div>
         <div className="items">
           <ul>
-            <NavLink to={"/"} exact="true" className="btn-text">
+            <NavLink to={"/home"} exact="true" className="btn-text">
               Home
             </NavLink>
 
-            <Link to={"/account"} className="btn-text">
+            <Link to={"/login"} className="btn-text">
               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
             </Link>
 

@@ -5,24 +5,24 @@ function TodaysMeal() {
   return (
     <div>
     <AdminHearder/>
-  <div className="bg-sky-800">
+  <div className="bg-orange-50">
     <br></br>
     <br></br>
 
     <div className="flex justify-evenly">
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
       All
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
       BreakFast
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
       Lunch
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
       Beverage
      </button>
-     <button className="rounded-full bg-gray-500 h-10 w-32 hover:bg-gray-300">
+     <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
       Dinner
      </button>
     </div>

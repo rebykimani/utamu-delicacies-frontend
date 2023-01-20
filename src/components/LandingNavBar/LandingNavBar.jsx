@@ -4,19 +4,26 @@ import { NavLink } from "react-router-dom";
 
 function LandingNavBar() {
   return (
-    <nav class="flex items-center justify-between  bg-gray-400 p-2">
+    <nav class="flex items-center justify-between  bg-black p-2">
       <img src={require("./logo.png")} className="h-24 w-32" alt="" />
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="lg:flex-grow pr-4 flex space-x-4 justify-end">
           <NavLink
-            className="bg-gray-600 py-3 px-6 text-lg rounded-md w-40  hover:bg-gray-500 text-white"
+            className=" bg-slate-50 py-3 px-6 text-lg rounded-md w-40  hover:bg-orange-300 "
             to="/dashboard"
             exact
           >
-            Dashboard
+            Admin
           </NavLink>
           <NavLink
-            className="bg-gray-600 py-3 px-6 text-lg rounded-md w-40  hover:bg-gray-500 text-white"
+            className="bg-slate-50 py-3 px-6 text-lg rounded-md w-40 hover:bg-orange-300 "
+            to="/home"
+            exact
+          >
+            Customer
+          </NavLink>
+          <NavLink
+            className="bg-slate-50 py-3 px-6 text-lg rounded-md w-40  hover:bg-orange-300 "
             to="/register"
             exact
           >
@@ -24,12 +31,13 @@ function LandingNavBar() {
           </NavLink>
 
           <NavLink
-            className="bg-gray-600 py-3 px-6 text-lg rounded-md w-40 hover:bg-gray-500 text-white"
+            className="bg-slate-50 py-3 px-6 text-lg rounded-md w-40 hover:bg-orange-300 "
             to="/login"
             exact
           >
             Login
           </NavLink>
+
         </div>
       </div>
     </nav>

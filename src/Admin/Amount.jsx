@@ -7,42 +7,42 @@ function Amount() {
   return (
     <div >
 <AdminHearder/>
-        <div className="bg-sky-800">
+        <div className="bg-orange-50">
       <br></br>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
             <div class="overflow-hidden">
               <table className="min-w-full text-center">
-                <thead className="border-b bg-gray-500">
+                <thead className="border-b bg-orange-300">
                   <tr>
                     <th
                       scope="col"
-                      class="text-sm font-medium text-white px-6 py-4"
+                      class="text-sm font-medium  px-6 py-4"
                     >
                       #
                     </th>
                     <th
                       scope="col"
-                      class="text-sm font-medium text-white px-6 py-4"
+                      class="text-sm font-medium  px-6 py-4"
                     >
                       Order
                     </th>
                     <th
                       scope="col"
-                      class="text-sm font-medium text-white px-6 py-4"
+                      class="text-sm font-medium  px-6 py-4"
                     >
                       Price
                     </th>
                     <th
                       scope="col"
-                      class="text-sm font-medium text-white px-6 py-4"
+                      class="text-sm font-medium  px-6 py-4"
                     >
                       Quantity
                     </th>
                     <th
                       scope="col"
-                      class="text-sm font-medium text-white px-6 py-4"
+                      class="text-sm font-medium px-6 py-4"
                     >
                       Total
                     </th>

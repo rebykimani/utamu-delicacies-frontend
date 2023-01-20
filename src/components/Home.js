@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import food from "../components/img/foof.jpg";
 import rice from "../components/img/Beef-fries.jpg";
@@ -8,29 +9,36 @@ import person2 from "../components/img/person2.jpeg";
 import chips from "../components/img/chips.jpeg";
 import eggs from "../components/img/eggs.jpeg";
 import meat from "../components/img/meat.jpg";
-import NavBarLanding from './NavBarLanding'
-
+import NavBarLanding from "./NavBarLanding";
 
 import "../App.css";
 function Home() {
   return (
-    <div className="home">
-      {/* <div className="home-1"> */}
-        <NavBarLanding />
-        {/* <NavLink to={"/login"} exact="true" className="btn-view-1">
-          Login
-        </NavLink> */}
-      {/* </div> */}
-
+    <div className="bg-sky-800 mb-7">
+      <NavBarLanding />
       <div className="info">
-        <div className="sect-1">
-          <h1>Delicious Food For Your cravings</h1>
-          <p>We Cook Fresh And Healthy Foods With Different Recipes</p>
-          <NavLink to={"/mondaymenu"} exact="true" className="btn-menu">
+        <div className=" bg-slate-50 mr-4 rounded-md">
+          <h1 className="text-2xl p-5 font-bold">
+            Delicious Food For Your cravings
+          </h1>
+          <p className="text-3xl p-5">
+            We Cook Fresh And Healthy Foods With Different Recipes
+          </p>
+          <NavLink
+            to={"/mainmenu"}
+            exact="true"
+            className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+          >
             View-Menu &rarr;
           </NavLink>
+          <br></br>
+          <br></br>
+          <div className="flex flex-row h-80 space-x-4 ml-4">
+            <img className="" src={require("./dinner1.jpg")} alt="" />
+            <img className="" src={require("./beverage.jpg")} alt="" />
+            <img className="" src={require("./bevarage1.jpg")} alt="" />
+          </div>
         </div>
-
         <div className="sect-2">
           <div class="composition">
             <img
@@ -53,83 +61,73 @@ function Home() {
       </div>
 
       <section className="about-us">
-     
-      <div className="about">
-      
-        <div className="about-image">
-          <img src={meat} alt="beef" />
+        <div className="about">
+          <div className="about-image mb-8">
+            <img src={meat} alt="beef" />
+          </div>
+          <div className="about-info mb-8">
+            <h1>History</h1>
+            <h3>Strange Stories of Emergence of Healthy Foods</h3>
+            <br></br>
+            <p>
+              You are what you eat, but you're also, to a surprisingly large
+              degree, what your parents ate. The Secret History of Food begins
+              with what we consumed in the womb. Crazy isnt?
+            </p>
+            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+              Read-More
+            </NavLink>
+          </div>
+
+          <div className="about-image mb-8">
+            <img src={eggs} alt="beef" />
+          </div>
+
+          <div className="about-info mb-8">
+            <h1>Community</h1>
+            <h3>Healthy food in social networks, with us is interesting</h3>
+            <p>
+              ocial media, such as Instagram, changed the way many people
+              consume food. Photos of food are used on Instagram in photographic
+              exchanges to identify and interact with the community and are the
+              second most popular Instagram topic after selfies .
+            </p>
+            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+              Read-More
+            </NavLink>
+          </div>
+
+          <div className="about-image mb-8">
+            <img src={chips} alt="beef" />
+          </div>
+
+          <div className="about-info mb-8">
+            <h1>Philosophy</h1>
+            <h3>Only the Best Food,the best musicians the best guests</h3>
+            <p>
+              What's better than good food and music to break the monotony of
+              life! Be it after a busy workday or over the weekends, we love
+              meeting up friends for some candid conversation, foods and drinks.
+            </p>
+            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+              Read-More
+            </NavLink>
+          </div>
         </div>
-        <div className="about-info">
-          <h1>History</h1>
-          <h3>Strange Stories of Emergence of Healthy Foods</h3>
-          <p>
-          You are what you eat, but you're also, to a surprisingly large degree, 
-          what your parents ate. The Secret History of Food begins with what we consumed in the womb. Crazy isnt?
-         
-          </p>
-          <NavLink to={"/"} exact="true" className="btn-text">
-          Read-More
-        </NavLink>
-         
-        </div>
-
-        <div className="about-image">
-        <img src={eggs} alt="beef" />
-      </div>
-
-
-    
-    <div className="about-info">
-      <h1>Community</h1>
-      <h3>Healthy food in social networks, with us is interesting</h3>
-      <p>
-      ocial media, such as Instagram, changed the way many people consume food. 
-      Photos of food are used on Instagram in photographic exchanges to identify and interact with the community 
-      and are the second most popular Instagram topic after selfies .
-       
-      </p>
-      <NavLink to={"/"} exact="true" className="btn-text">
-      Read-More
-    </NavLink>
-    </div>
-
-    <div className="about-image">
-    <img src={chips} alt="beef" />
-  </div>
-
-     <div className="about-info">
-      <h1>Philosophy</h1>
-      <h3>Only the Best Food,the best musicians the best guests</h3>
-      <p>
-      What's better than good food and music to break the monotony of life! 
-      Be it after a busy workday or over the weekends, 
-      we love meeting up friends for some candid conversation, 
-      foods and drinks.
-       
-      </p>
-      <NavLink to={"/"} exact="true" className="btn-text">
-      Read-More
-    </NavLink>
-    </div>
-      </div>
-      
-      
       </section>
-
-      
 
       <section className="section-stories">
         <div className="u-center-text u-margin-bottom-big">
-          <h2 className="heading-secondary">We make people Genuinely happy</h2>
+          <h2 className="heading-secondary text-white">We make people Genuinely happy</h2>
         </div>
 
-        <div className="row">
-          <div className="story">
+        <div className="row ">
+          <div className="story ">
             <figure className="story__shape">
               <img src={person2} alt="tour" className="story__img" />
               <ficaption className="story__caption">Becky</ficaption>
             </figure>
-            <div className="story__text">
+            <div className="story__text ">
               <h3 className="heading-tertiary u-margin-bottom-small">
                 I enjoyed my Ugali-fish
               </h3>
@@ -164,17 +162,19 @@ function Home() {
         </div>
 
         <div className="u-center-text u-margin-top-huge">
-          <a href="/" className="btn-text">
+          <a href="/" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
             Read all stories &rarr;
           </a>
         </div>
+        <Link to="/addReview" className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3">Add Review</Link>
       </section>
 
-      <section className="footer">
+
+      {/* <section className="footer">
         <div className="sect-footer">
           <div className="right">
             <h1>Utamu delicacies</h1>
-     
+
           </div>
 
           <div className="links">
@@ -200,7 +200,7 @@ function Home() {
             <p>09AM - 09PM</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
