@@ -4,7 +4,6 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
 
-
 function Navbar({ setIsAuthenticated }) {
   const navigate = useNavigate();
   function handleLogout() {
@@ -15,7 +14,7 @@ function Navbar({ setIsAuthenticated }) {
   return (
     <div>
       <nav className="bg-slate-200 flex items-center justify-between h-36 ">
-      <img src={require("./logo.png")} className="h-24 w-32" alt="" />
+        <img src={require("./logo.png")} className="h-24 w-32" alt="" />
         <div className="text-3xl">
           <NavLink to={"/home"} exact="true">
             Utamu Delicacies
@@ -35,12 +34,15 @@ function Navbar({ setIsAuthenticated }) {
               Cart
             </NavLink>
             <div className="btn-text mr-4">
-            <a href="/">
-            <div className="flex space-x-4 mt-6 hover:bg-white" onClick={handleLogout}>
-              Logout <FiLogOut size="20px" />
+              <a href="/">
+                <div
+                  className="flex space-x-4 mt-6 hover:bg-white"
+                  onClick={handleLogout}
+                >
+                  Logout <FiLogOut size="20px" />
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
           </ul>
         </div>
       </nav>

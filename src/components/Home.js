@@ -14,10 +14,10 @@ import NavBarLanding from "./NavBarLanding";
 import "../App.css";
 function Home() {
   return (
-    <div className="bg-sky-800 mb-7">
+    <div className="bg-red-50 mb-7">
       <NavBarLanding />
       <div className="info">
-        <div className=" bg-slate-50 mr-4 rounded-md">
+        <div className=" bg-red-50	 mr-4 rounded-md">
           <h1 className="text-2xl p-5 font-bold">
             Delicious Food For Your cravings
           </h1>
@@ -74,7 +74,11 @@ function Home() {
               degree, what your parents ate. The Secret History of Food begins
               with what we consumed in the womb. Crazy isnt?
             </p>
-            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+            <NavLink
+              to={"/"}
+              exact="true"
+              className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+            >
               Read-More
             </NavLink>
           </div>
@@ -92,7 +96,11 @@ function Home() {
               exchanges to identify and interact with the community and are the
               second most popular Instagram topic after selfies .
             </p>
-            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+            <NavLink
+              to={"/"}
+              exact="true"
+              className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+            >
               Read-More
             </NavLink>
           </div>
@@ -109,7 +117,11 @@ function Home() {
               life! Be it after a busy workday or over the weekends, we love
               meeting up friends for some candid conversation, foods and drinks.
             </p>
-            <NavLink to={"/"} exact="true" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+            <NavLink
+              to={"/"}
+              exact="true"
+              className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+            >
               Read-More
             </NavLink>
           </div>
@@ -118,7 +130,9 @@ function Home() {
 
       <section className="section-stories">
         <div className="u-center-text u-margin-bottom-big">
-          <h2 className="heading-secondary text-white">We make people Genuinely happy</h2>
+          <h2 className="heading-secondary text-black">
+            We make people Genuinely happy
+          </h2>
         </div>
 
         <div className="row ">
@@ -162,7 +176,10 @@ function Home() {
         </div>
 
         <div className="u-center-text u-margin-top-huge">
-          <a href="/" className="text-2xl bg-sky-400 p-3 rounded-full mt-10">
+          <a
+            href="/home"
+            className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+          >
             Read all stories &rarr;
           </a>
         </div>
