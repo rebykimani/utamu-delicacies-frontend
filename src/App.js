@@ -19,7 +19,6 @@ import AddReview from "./components/LandingPage/AddReview";
 
 
 function App() {
-  const [user, setUser] = useState(null);
   return (
     <div>
       <Routes>
