@@ -43,7 +43,7 @@ Unzip the downloaded files in a folder of choice. *Open the index.html file from
 
 ## Live Link
 
-Or you can access the web application directly via this <a>https://utamu-delicacies.vercel.app//</a>
+Access the web application directly via this <a>https://utamu-delicacies.vercel.app//</a>
 
 ## Dependencies
 
