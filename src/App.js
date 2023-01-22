@@ -1,6 +1,6 @@
 // import { useState } from React;
 import "./App.css";
-import React, { useState } from "react";
+import React,{useState} from "react";
 import Landing from "./components/LandingPage/Landing";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
@@ -14,15 +14,19 @@ import Home from "./components/Home";
 import MainMenu from "./components/MainMenu";
 import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
+import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
+import AddNewMeal from "./Admin/AddNewMeal";
+import AddReview from "./components/LandingPage/AddReview";
+
 
 function App() {
-  const [user, setUser] = React.useState(null);
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<SignUp />} />
+        <Route exact path="/registeradmin" element={<SignUpAdmin />} />
         <Route exact path="/todaysMeal" element={<TodaysMeal />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/order" element={<Order />} />
@@ -30,6 +34,9 @@ function App() {
         <Route exact path="/mainmenu" element={<MainMenu />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/addNewMeal" element={<AddNewMeal />} />
+        <Route exact path="/addReview" element={<AddReview />} />
+
         {/* <Route exact path="/mondaymenu  */}
       </Routes>
       {/* <Dashboard /> */}

@@ -70,3 +70,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # book-a-meal-frontend
+
+
+
+{/* //   <div className="App">
+//       <h1>Create new user</h1>
+//       <form>
+        <label>
+          Username:
+          <input */}
+            {/* type="text"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label> */}
+{/* //         <label>
+//           Email:
+          <input */}
+            {/* type="text"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label> */}
+{/* //         <label>
+//           Password:
+//           <input */}
+{/* //             type="text"
+//             name="password"
+//             value={password}
+//             onChange={(e) => setPassword(e.target.value)}
+//           />
+//         </label> */}
+{/* //         <button onClick={handleSubmit} >Submit</button>
+//       </form> */}
+{/* //       <p>Already have an account?</p>
+//       <Link to="/login">Login</Link>
+//       <div>
+//       {isAuthenticated ? 'Welcome back!' : <Login onRegister={handleRegister} />} (
+//         <button onClick={handleLogout}>Logout</button>
+//       ) : (
+//         'Please log in.'
+//       )
+//     </div>
+//     </div> */}
+// {/* //   ); */}}
