@@ -12,11 +12,12 @@ import Amount from "./Admin/Amount";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import MainMenu from "./components/MainMenu";
-import MondayMeal from "./components/Meals/MondayMeal";
+// import MondayMeal from "./components/Meals/MondayMeal";
 import Profile from "./components/Profile";
 import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
 import AddNewMeal from "./Admin/AddNewMeal";
 import AddReview from "./components/LandingPage/AddReview";
+//import cart from "./components/cart";
 
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/addNewMeal" element={<AddNewMeal />} />
         <Route exact path="/addReview" element={<AddReview />} />
+        <Route exact path="/cart" element={<cart />} /> 
+
 
         {/* <Route exact path="/mondaymenu  */}
       </Routes>
