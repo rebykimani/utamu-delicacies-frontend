@@ -1,6 +1,6 @@
 // import { useState } from React;
 import "./App.css";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Landing from "./components/LandingPage/Landing";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
@@ -17,7 +17,7 @@ import Profile from "./components/Profile";
 import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
 import AddNewMeal from "./Admin/AddNewMeal";
 import AddReview from "./components/LandingPage/AddReview";
-
+import OrderCustomer from "./components/OrderCustomer";
 
 function App() {
   return (
@@ -36,6 +36,7 @@ function App() {
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/addNewMeal" element={<AddNewMeal />} />
         <Route exact path="/addReview" element={<AddReview />} />
+        <Route exact path="/orderCustomer" element={<OrderCustomer />} />
 
         {/* <Route exact path="/mondaymenu  */}
       </Routes>

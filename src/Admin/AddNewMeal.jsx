@@ -38,7 +38,7 @@ function AddNewMeal() {
         <div>
             <AdminHearder/>
       <div className="p-8 bg-orange-50 ">
-        <h2 className="text-3xl text-gray-600 font-bold">Add a New Post</h2>
+        <h2 className="text-3xl text-gray-600 font-bold">Add a New Meal</h2>
         <form className="p-4 flex flex-col" onSubmit={handleSubmit}>
           <label className="pb-4 mt-4">Meal Name:</label>
           <input

@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards.css";
 import { useParams, useNavigate } from "react-router-dom";
 
-function AdminCard({ name, price, image, category, description }) {
+function CustomerCard({ name, price, image, category, description, }) {
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -55,4 +55,4 @@ function AdminCard({ name, price, image, category, description }) {
   );
 }
 
-export default AdminCard;
+export default CustomerCard;

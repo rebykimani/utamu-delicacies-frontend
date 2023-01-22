@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AdminHearder from "./AdminHearder";
 import AdminCard from "./AdminCard";
-import AddNewMeal from "./AddNewMeal";
+// import AddNewMeal from "./AddNewMeal";
 import { Link } from "react-router-dom";
 
 function Dashboard() {
@@ -23,7 +23,7 @@ function Dashboard() {
   let cards = meals.map((meal) => (
     <AdminCard
       image={meal.image}
-      name={meal.title}
+      name={meal.name}
       price={meal.price}
       category={meal.category}
       description={meal.description}
@@ -39,17 +39,17 @@ function Dashboard() {
     // console.log(updatedProducts);
   };
 
-  const handleAddData = (data) => {
-    fetch(baseUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((newMeal) => setMeals([...meals, newMeal]));
-  };
+  // const handleAddData = (data) => {
+  //   fetch(baseUrl, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((newMeal) => setMeals([...meals, newMeal]));
+  // };
   return (
     <div>
       <AdminHearder />
@@ -75,11 +75,13 @@ function Dashboard() {
             Lunch
           </button>
           <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
-          onClick={() => filterItems("dessert")}
+          onClick={() => filterItems("shakes")}
           >
             Beverage
           </button>
-          <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300">
+          <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+          onClick={() => filterItems("dinner")}
+          >
             Dinner
           </button>
         </div>

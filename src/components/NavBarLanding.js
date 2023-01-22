@@ -30,7 +30,11 @@ function Navbar({ setIsAuthenticated }) {
               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
             </Link> */}
 
-            <NavLink to={"/cart"} exact="true" className="btn-text mr-4">
+            <NavLink
+              to={"/orderCustomer"}
+              exact="true"
+              className="btn-text mr-4"
+            >
               Cart
             </NavLink>
             <div className="btn-text mr-4">
