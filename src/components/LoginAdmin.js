@@ -74,7 +74,7 @@ function LoginAdmin() {
                 />
               </div>
               <div className="input-field">
-                <Link to="/dashboard" className="field">
+                <Link to="/addNewMeal" className="field">
                   Login
                 </Link>
                 <div className="input-field">

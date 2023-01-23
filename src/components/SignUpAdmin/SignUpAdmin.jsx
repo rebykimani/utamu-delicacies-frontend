@@ -35,7 +35,7 @@ function SignUpAdmin({ setStoredToken }) {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("token", data.token);
-        navigate("/dashboard");
+        navigate("/addNewMeal");
         console.log(data);
       });
     setName("");
@@ -48,7 +48,7 @@ function SignUpAdmin({ setStoredToken }) {
     const token = localStorage.getItem("token");
     if (token) {
       setIsAuthenticated(true);
-      navigate("/dashboard");
+      navigate("/addNewMeal");
     }
   }, []);
 

@@ -58,12 +58,12 @@ function Dashboard() {
         <br></br>
 
         <div className="flex justify-evenly">
-        <Link to="/addNewMeal" className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3">Add Meal</Link>
-          <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+        {/* <Link to="/addNewMeal" className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3">Add Meal</Link> */}
+          {/* <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
           onClick={() => filterItems("MEALS")}
           >
             All
-          </button>
+          </button> */}
           <button className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
           onClick={() => filterItems("breakfast")}
           >

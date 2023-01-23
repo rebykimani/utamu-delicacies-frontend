@@ -1,33 +1,126 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import { TopMeals } from "./Meals/mealCard";
 import Footer from "../components/Footer/Footer";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../App.css";
+import CustomerCard from "./CustomerCard";
+import NavBarLanding from "./NavBarLanding";
 
 function MainMenu() {
-  const navigate = useNavigate();
-  function handleDestroySession(e) {
-    e.preventDefault();
-    fetch("https://buk-a-meal.herokuapp.com/logout", {
-      method: "DELETE",
-    }).then((r) => {
-      if (r.ok) {
-        navigate("/");
-      } else {
-        alert();
-      }
+  const [meals, setMeals] = useState([]);
+  const baseUrl = "http://127.0.0.1:3000/meals";
+  const productFetcher = () => {
+    fetch(baseUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data);
+        setMeals(data);
+      });
+  };
+  useEffect(productFetcher, []);
+  console.log("MEALSELLLL:::", meals);
+  let cards =
+    meals &&
+    meals.map((meal) => (
+      <CustomerCard
+        image={meal.image}
+        name={meal.name}
+        price={meal.price}
+        category={meal.category}
+        description={meal.description}
+        key={meal.id}
+      />
+    ));
+  const filterItems = (categItem) => {
+    const updatedProducts = meals.filter((curElem) => {
+      return curElem.category === categItem;
     });
-  }
-
+    setMeals(updatedProducts);
+    // console.log(updatedProducts);
+  };
+  // const handleAddData = (data) => {
+  //   fetch(baseUrl, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((newMeal) => setMeals([...meals, newMeal]));
+  // };
   return (
-    <div className="home">
-      {/* <div className="home-1"> */}
-      <Navbar />
-      <TopMeals />
+    <div>
+      <NavBarLanding />
+      <div className="bg-orange-50">
+        <br></br>
+        <br></br>
+        <div className="flex justify-evenly">
+          {/* <Link
+            to="/addNewMeal"
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3"
+          >
+            Add Meal
+          </Link> */}
+          <button
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+            onClick={() => filterItems("MEALS")}
+          >
+            All
+          </button>
+          <button
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+            onClick={() => filterItems("breakfast")}
+          >
+            BreakFast
+          </button>
+          <button
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+            onClick={() => filterItems("lunch")}
+          >
+            Lunch
+          </button>
+          <button
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+            onClick={() => filterItems("shakes")}
+          >
+            Beverage
+          </button>
+          <button
+            className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300"
+            onClick={() => filterItems("dinner")}
+          >
+            Dinner
+          </button>
+        </div>
+        <br></br>
+        <br></br>
+      </div>
+      <div className="row">{cards}</div>
       {/* <Footer /> */}
     </div>
   );
 }
-
+//   const navigate = useNavigate();
+//   function handleDestroySession(e) {
+//     e.preventDefault();
+//     fetch("https://buk-a-meal.herokuapp.com/logout", {
+//       method: "DELETE",
+//     }).then((r) => {
+//       if (r.ok) {
+//         navigate("/");
+//       } else {
+//         alert();
+//       }
+//     });
+//   }
+//   return (
+//     <div className="home">
+//       {/* <div className="home-1"> */}
+//       <Navbar />
+//       <TopMeals />
+//     </div>
+//   );
+// }
 export default MainMenu;

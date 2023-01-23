@@ -26,17 +26,17 @@ function AdminCard({ name, price, image, category, description }) {
         <div className="card-body"></div>
         <div className="card__info">
           <h2>Title:{name}</h2>
-          <h2>Title:{price}</h2>
+          <h2>Price:{price}</h2>
           <h5>Catgory:{category}</h5>
           <h4>Description:{description}</h4>
           <div>
             <div className="flex space-x-4">
-              <button
+              {/* <button
                 className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300 "
                 // onClick={handleClick}
               >
                 Add Meal
-              </button>
+              </button> */}
               <button
                 className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300"
                 onClick={handleClick}
