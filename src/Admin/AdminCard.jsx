@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Cards.css";
 import { useParams, useNavigate } from "react-router-dom";
 
 function AdminCard({ name, price, image, category, description }) {
   const navigate = useNavigate();
   const { id } = useParams();
+
 
   const handleClick = () => {
     console.log(id);
@@ -41,12 +43,12 @@ function AdminCard({ name, price, image, category, description }) {
               >
                 Delete Meal
               </button>
-              <button
+              <Link to="/modifymeal"
                 className="bg-sky-700 p-2 border border-gray-400 rounded-full text-white hover:bg-orange-300"
-                // onClick={handleClick}
+
               >
                 Modify Meal
-              </button>
+              </Link>
             </div>
           </div>
         </div>

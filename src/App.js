@@ -18,6 +18,8 @@ import SignUpAdmin from "./components/SignUpAdmin/SignUpAdmin";
 import AddNewMeal from "./Admin/AddNewMeal";
 import AddReview from "./components/LandingPage/AddReview";
 import OrderCustomer from "./components/OrderCustomer";
+import LoginAdmin from "./components/LoginAdmin";
+import ModifyMeal from "./Admin/ModifyMeal";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/loginadmin" element={<LoginAdmin />} />
         <Route exact path="/register" element={<SignUp />} />
         <Route exact path="/registeradmin" element={<SignUpAdmin />} />
         <Route exact path="/todaysMeal" element={<TodaysMeal />} />
@@ -37,6 +40,7 @@ function App() {
         <Route exact path="/addNewMeal" element={<AddNewMeal />} />
         <Route exact path="/addReview" element={<AddReview />} />
         <Route exact path="/orderCustomer" element={<OrderCustomer />} />
+        <Route exact path="/modifymeal" element={<ModifyMeal />} />
 
         {/* <Route exact path="/mondaymenu  */}
       </Routes>
