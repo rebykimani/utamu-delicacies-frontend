@@ -113,14 +113,14 @@ function SignUp() {
               <br />
               <input
                 className="field"
-                type="text"
+                type="password"
                 name="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </label>
             <br />
-            <label className="px-3">
+            {/* <label className="px-3">
               <input
                 className="px-4"
                 type="radio"
@@ -142,7 +142,7 @@ function SignUp() {
                 }}
               />
               Admin
-            </label>
+            </label> */}
             <br />
             {/* <button onClick={handleSubmit}>Submit</button> */}
             <button onClick={handleSubmit} className="field">

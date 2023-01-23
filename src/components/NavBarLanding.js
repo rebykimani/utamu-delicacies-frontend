@@ -13,16 +13,20 @@ function Navbar({ setIsAuthenticated }) {
   }
   return (
     <div>
-      <nav className="bg-slate-200 flex items-center justify-between h-36 ">
+      <nav className="bg-black flex items-center justify-between h-36 ">
         <img src={require("./logo.png")} className="h-24 w-32" alt="" />
-        <div className="text-3xl">
+        <div className="text-3xl text-white">
           <NavLink to={"/home"} exact="true">
             Utamu Delicacies
           </NavLink>
         </div>
         <div className="items">
-          <ul className="flex space-x-4">
-            <NavLink to={"/home"} exact="true" className="btn-text">
+          <ul className="flex space-x-4 ">
+            <NavLink
+              to={"/home"}
+              exact="true"
+              className="btn-text text-white bg-gray-700"
+            >
               Home
             </NavLink>
 
@@ -30,13 +34,17 @@ function Navbar({ setIsAuthenticated }) {
               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
             </Link> */}
 
-            <NavLink to={"/cart"} exact="true" className="btn-text mr-4">
+            <NavLink
+              to={"/orderCustomer"}
+              exact="true"
+              className="btn-text mr-4 text-white hover: bg-gray-700"
+            >
               Cart
             </NavLink>
             <div className="btn-text mr-4">
               <a href="/">
                 <div
-                  className="flex space-x-4 mt-6 hover:bg-white"
+                  className="flex space-x-4 mt-6 hover:bg-gray-600 text-white"
                   onClick={handleLogout}
                 >
                   Logout <FiLogOut size="20px" />

@@ -183,7 +183,16 @@ function Home() {
             Read all stories &rarr;
           </a>
         </div>
-        <Link to="/addReview" className="rounded-full bg-orange-400 h-10 w-32 hover:bg-orange-300 p-3">Add Review</Link>
+        <br></br>
+        <br></br>
+        <div className="u-center-text u-margin-top-huge">
+          <a
+            href="/addReview"
+            className="text-2xl bg-sky-400 p-3 rounded-full mt-10"
+          >
+            Add Review &rarr;
+          </a>
+        </div>
       </section>
 
 

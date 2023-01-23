@@ -8,7 +8,7 @@ function LandingNavBar() {
       <img src={require("./logo.png")} className="h-24 w-32" alt="" />
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="lg:flex-grow pr-4 flex space-x-4 justify-end">
-          <NavLink
+          {/* <NavLink
             className=" bg-slate-50 py-3 px-6 text-lg rounded-md w-40  hover:bg-orange-300 "
             to="/dashboard"
             exact
@@ -21,21 +21,21 @@ function LandingNavBar() {
             exact
           >
             Customer
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className="bg-slate-50 py-3 px-6 text-lg rounded-md w-40  hover:bg-orange-300 "
-            to="/register"
+            to="/registeradmin"
             exact
           >
-            Register
+            Admin Signup
           </NavLink>
 
           <NavLink
-            className="bg-slate-50 py-3 px-6 text-lg rounded-md w-40 hover:bg-orange-300 "
-            to="/login"
+            className="bg-slate-50 py-3 px-6 text-lg rounded-md  hover:bg-orange-300 "
+            to="/register"
             exact
           >
-            Login
+            Customer SignUp
           </NavLink>
 
         </div>

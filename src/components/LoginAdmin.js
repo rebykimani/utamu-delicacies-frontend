@@ -6,7 +6,7 @@ import meat from "../components/img/logo.jpg";
 
 import "../App.css";
 
-function Login() {
+function LoginAdmin() {
   const navigate = useNavigate();
 
   // setUser
@@ -74,7 +74,7 @@ function Login() {
                 />
               </div>
               <div className="input-field">
-                <Link to="/home" className="field">
+                <Link to="/dashboard" className="field">
                   Login
                 </Link>
                 <div className="input-field">
@@ -100,4 +100,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginAdmin;

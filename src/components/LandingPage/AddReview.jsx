@@ -4,25 +4,27 @@ import { useNavigate } from "react-router-dom";
 function AddReview() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [meal_id, setmeal_id] = useState("");
 
     const [isPending, setisPending] = useState(false);
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      const review = {message};
+      const reviews = {meal_id, name, message};
       // console.log(review);
       setisPending(true);
 
       fetch("http://127.0.0.1:3000/reviews", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(review),
+        body: JSON.stringify(reviews),
       })
         .then((res) => res.json())
         .then(() => {
           setName("");
           setMessage("");
+          setmeal_id ("");
           setisPending(false);
           navigate("/home");
         });
@@ -51,24 +53,24 @@ function AddReview() {
     value={price}
     placeholder="Add price"
     onChange={(e) => setPrice(e.target.value)}
-  />
-  <label className="pb-4 mt-4">Meal Category:</label>
+/>*/}
+  <label className="pb-4 mt-4">Meal_ID:</label>
   <input
     className="p-2 border border-solid border-gray-300"
     type="text"
     required
-    value={category}
-    placeholder="Add a category"
-    onChange={(e) => setCategory(e.target.value)}
-  /> */}
-  {/* <label className='pb-4 mt-4'>Article Author:</label>
+    value={meal_id}
+    placeholder="Add meal_id"
+    onChange={(e) => setmeal_id(e.target.value)}
+  />
+  <label className='pb-4 mt-4'>Name:</label>
           <input className='p-2 border border-solid border-gray-300 '
           type="text"
           required
-          value={author}
+          value={name}
           placeholder="Add your name"
-          onChange={(e)=>setAuthor(e.target.value)}
-      /> */}
+          onChange={(e)=>setName(e.target.value)}
+      />
   <label className="mt-4 pb-4">Message: </label>
   <textarea
     className="py-10 border border-solid border-gray-300"
