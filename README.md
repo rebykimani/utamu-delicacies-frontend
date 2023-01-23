@@ -12,7 +12,7 @@ Take a look at it here: <https://github.com/amosmaundundu/yummy>
 
 ## Link to Live Site
 
-Take a look at it here: <https://hack-the-code-wm1u.vercel.app/dashboard>
+Take a look at it here: <https://utamuu-delicacies-7d6s.vercel.app/>
 
 ### Authors
 
