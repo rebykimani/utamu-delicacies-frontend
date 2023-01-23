@@ -19,14 +19,14 @@ function AdminHearder({setIsAuthenticated}) {
         <div class="lg:flex-grow pr-4 flex space-x-4 justify-end mt-10 ">
         <NavLink
             className=" text-white underline underline-offset-2 py-3 px-4 h-20 text-lg rounded-md w-40 hover:bg-orange-300"
-            to="/dashboard"
+            to="/addNewMeal"
             exact
           >
             Dashboard
           </NavLink>
           <NavLink
             className=" text-white underline underline-offset-2 py-3 px-6 text-lg rounded-md w-40 hover:bg-orange-300 h-20"
-            to="/todaysMeal"
+            to="/dashboard"
             exact
           >
             Today's Meal
